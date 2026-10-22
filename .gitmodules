@@ -1,0 +1,3 @@
+[submodule "scripts/services/hyprlandScreenTimeMonitor"]
+	path = scripts/services/hyprlandScreenTimeMonitor
+	url = https://github.com/elia2307/hyprlandScreenTimeMonitor
