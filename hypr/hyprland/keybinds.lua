@@ -10,7 +10,7 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
 
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("lollypop"))
 
-hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("chromium"))
+--hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("chromium"))
 
 --bind = $mainMod ,space, exec, pgrep wofi > /dev/null 2>&1 && killall wofi || wofi -S drun -c ~/dotfiles/wofi/config -s ~/dotfiles/wofi/style.css
 

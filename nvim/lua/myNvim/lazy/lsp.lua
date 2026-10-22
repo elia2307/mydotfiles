@@ -29,6 +29,7 @@ return {
                 "rust_analyzer",
                 "gopls",
                 "pyright",
+                "elmls",
             },
             handlers = {
                 function(server_name) -- default handler (optional)

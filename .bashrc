@@ -101,4 +101,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export VLLM_USE_V1=1
 
 
-
+export ANTHROPIC_API_KEY=sk-plwkr01-DQK9X79VA2AE24RFKDR9VGZMTAGFZ72DZAEYX4XEV2MVE42N
+export ANTHROPIC_BASE_URL=https://app-llmproxy.dataannotation.tech/api/llm_proxy/anthropic

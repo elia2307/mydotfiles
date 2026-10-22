@@ -13,10 +13,9 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("protonvpn connect --country SE")
     hl.exec_cmd("/home/eli/.config/eww/scripts/start.sh")
 
-
-
-
-
+    hl.exec_cmd("swaync")
+    hl.exec_cmd(os.getenv("HOME") .. "/.config/eww/scripts/start.sh")
+    hl.exec_cmd("albert")
 end)
 
 

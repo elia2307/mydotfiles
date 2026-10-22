@@ -1,4 +1,5 @@
 .cache
+Downloads
 .ollama
 .android
 */node_modules
@@ -41,3 +42,4 @@ go
 .ghcup
 .jd
 
+toWatch
