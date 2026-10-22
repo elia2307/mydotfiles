@@ -1,4 +1,4 @@
-pass=$(cat /home/eli/.encryptionKeys/ProtonArchiveKey.key) 
+pass=$(cat ~/.encryptionKeys/ProtonArchiveKey.key) 
 archiveLoc="/mnt/Data/Notes/Notes"
 
 tar -cvzf - $archiveLoc | gpg -c --batch --yes --passphrase $pass > ~/.cache/tmpnotesArchive.tar.gz.gpg 

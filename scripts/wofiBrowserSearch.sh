@@ -1,11 +1,11 @@
 
-logFile="/home/eli/.cache/wofiBrowserSearch.txt"
+logFile="~/.cache/wofiBrowserSearch.txt"
 prompt="Search:"
 if [ $1 == "--url" ]; then 
-    logFile="/home/eli/.cache/wofiBrowserUrl.txt"
+    logFile="~/.cache/wofiBrowserUrl.txt"
     prompt="Url:"
 elif [ $1 == "--dict" ]; then
-    logFile="/home/eli/.cache/wofiDictionary.txt"
+    logFile="~/.cache/wofiDictionary.txt"
     prompt="Word for definition:"
 fi
 

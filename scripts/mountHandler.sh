@@ -3,7 +3,7 @@
 if [ "$1" == "-E" ]; then
     sudo umount /mnt/External
     sudo cryptsetup close encryptedexternal
-    sudo cryptsetup open UUID=8f069dd9-407c-40a1-834b-35cf35ae251a encryptedexternal --key-file /home/eli/.encryptionKeys/external.key
+    sudo cryptsetup open UUID=8f069dd9-407c-40a1-834b-35cf35ae251a encryptedexternal --key-file $HOME/.encryptionKeys/external.key
     sudo mount /dev/mapper/encryptedexternal /mnt/External/
 elif [ "$1" == "-EU" ]; then 
     sudo umount /dev/mapper/encryptedexternal
@@ -13,7 +13,7 @@ elif [ "$1" == "-P" ]; then
 elif [ "$1" == "" ]; then 
     sudo umount /mnt/External
     sudo cryptsetup close encryptedexternal
-    sudo cryptsetup open UUID=8f069dd9-407c-40a1-834b-35cf35ae251a encryptedexternal --key-file /home/eli/.encryptionKeys/external.key
+    sudo cryptsetup open UUID=8f069dd9-407c-40a1-834b-35cf35ae251a encryptedexternal --key-file $HOME/.encryptionKeys/external.key
     sudo mount /dev/mapper/encryptedexternal /mnt/External/
 else 
     echo "Unkown flags"

@@ -13,7 +13,7 @@ HISTFILESIZE=-1
 # ALIASES
 # -----------------------------------------------------
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
-alias startRemoteControlServer="/home/eli/Coding/projects/remote_control/run.sh"
+alias startRemoteControlServer="~/Coding/projects/remote_control/run.sh"
 alias bluetooth="blueman-manager"
 alias c='clear'
 alias ff='fastfetch'
@@ -93,7 +93,7 @@ unset ANDROID_SDK_ROOT
 
 
 # Created by `pipx` on 2025-11-19 14:42:26
-export PATH="$PATH:/home/eli/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 

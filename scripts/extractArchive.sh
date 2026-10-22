@@ -1,4 +1,4 @@
-pass=$(cat /home/eli/.encryptionKeys/ProtonArchiveKey.key) 
+pass=$(cat $HOME/.encryptionKeys/ProtonArchiveKey.key) 
 output="./extracted"
 input=$1
 

@@ -1,6 +1,6 @@
 
 
-proton2fa="/home/eli/dotfiles/scripts/protonHandler.sh"
+proton2fa="~/dotfiles/scripts/protonHandler.sh"
 
 
 outputLoc="/mnt/Data/notesBackup/"
@@ -17,15 +17,13 @@ for f in $outputLoc$archiveStart*; do
         #sync with proton drive
         
         #update rclone 2fa code
-        #facode=cat /home/eli/.encryptionKeys/proton2faCode
-        #code=$(oathtool -b --totp $facode)
 
         $proton2fa && rclone sync /mnt/Data/notesBackup/ Proton:NotesBackup 
         #exit
     fi
 done
 
-pass=$(cat /home/eli/.encryptionKeys/ProtonArchiveKey.key) 
+pass=$(cat ~/.encryptionKeys/ProtonArchiveKey.key) 
 archiveLoc="/mnt/Data/Notes/Notes"
 
 tar -cvzf - $archiveLoc | gpg -c --batch --yes --passphrase $pass > ~/.cache/tmpnotesArchive.tar.gz.gpg 

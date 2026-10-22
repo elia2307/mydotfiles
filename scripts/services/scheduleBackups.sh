@@ -1,5 +1,5 @@
-inputFolder="/home/eli/dotfiles/scripts/services/"
-outputFolder="/home/eli/.config/systemd/user/"
+inputFolder="~/dotfiles/scripts/services/"
+outputFolder="~/.config/systemd/user/"
 
 rm ${outputFolder}{notesBackup.service,notesBackup.timer,systemBackup.service,systemBackup.timer}
 
